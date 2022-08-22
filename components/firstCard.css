@@ -1,0 +1,75 @@
+.card {
+  height: 30rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(2px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  padding-bottom: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  position: relative;
+  z-index: +10;
+}
+.shoesHeading {
+  color: #b7f21e;
+  font-family: blazed;
+}
+.card,
+.card * {
+  box-sizing: border-box;
+  transition: 400ms;
+}
+.card img {
+  display: block;
+  width: 40vh;
+  height: auto;
+}
+.cardTitle {
+  text-align: center;
+  color: white;
+  font-size: 1.25rem;
+  /* font-weight: bold; */
+}
+.cardContent {
+  text-align: center;
+  color: white;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.cardContent p {
+  font-style: italic;
+}
+.btnSection button {
+  outline: none;
+  border: 1px solid transparent;
+
+  padding: 4px 43px;
+  border-radius: 20px;
+}
+
+.cardContent p::first-letter {
+  color: #b7f21e;
+  font-size: 20px;
+}
+.icons img {
+  width: 40px;
+}
+.card:hover .cardContent {
+  transform: translateY(-4px);
+  opacity: 1;
+}
+.card:hover .cardImg {
+  transform: translateY(-48px);
+}
+
+.card:hover .cardImg img {
+  transform: translate(-17px, -55px) rotate(-16deg) scale(1.2);
+}
